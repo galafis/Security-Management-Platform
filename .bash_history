@@ -98,3 +98,60 @@ export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
 ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
 pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
 source /home/ubuntu/.user_env && cd . && mv Security-Management-Platform/src/main/java/com/galafis/security-management-platform Security-Management-Platform/src/main/java/com/galafis/securitymanagementplatform
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && mvn clean install
+source /home/ubuntu/.user_env && cd . && cd Security-Management-Platform && mvn clean install
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && cd Security-Management-Platform && mvn exec:java -Dexec.mainClass="com.galafis.security.ThreatDetectionService"
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && mkdir -p Security-Management-Platform/src/test/java/com/galafis/security
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && cd Security-Management-Platform && mvn test
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && manus-create-react-app Security-Management-Platform/docs/github-pages
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && convert -size 1920x1080 xc:black -fill white -pointsize 72 -gravity Center -annotate +0+0 "Security Platform" Security-Management-Platform/docs/github-pages/public/assets/hero-bg.jpg
+export PS1="[CMD_BEGIN]\n\u@\h:\w\n[CMD_END]"; export PS2=""
+export TERM=xterm-256color
+export OPENAI_API_KEY="sk-aeYTNffVFo57zHqoP5mFaq"
+export OPENAI_API_BASE="https://api.manus.im/api/llm-proxy/v1"
+export OPENAI_BASE_URL="https://api.manus.im/api/llm-proxy/v1"
+ps() { /bin/ps "$@" | grep -v -E '(start_server\.py|upgrade\.py|supervisor)' || true; }
+pgrep() { /usr/bin/pgrep "$@" | while read pid; do [ -n "$pid" ] && cmdline=$(/bin/ps -p $pid -o command= 2>/dev/null) && ! echo "$cmdline" | grep -q -E '(start_server\.py|upgrade\.py|supervisor)' && echo "$pid"; done; }
+source /home/ubuntu/.user_env && cd . && mkdir -p Security-Management-Platform/docs/github-pages/public/assets
